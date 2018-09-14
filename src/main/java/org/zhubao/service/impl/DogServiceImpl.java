@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 @Service
 public class DogServiceImpl implements DogService {
 
-    private DogRepository dogRepository;
+    private final DogRepository dogRepository;
 
     public DogServiceImpl(DogRepository dogRepository) {
         this.dogRepository = dogRepository;

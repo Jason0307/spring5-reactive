@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/dogs/v1")
 public class DogController {
 
-    private DogService dogService;
+    private final DogService dogService;
 
     public DogController(DogService dogService) {
         this.dogService = dogService;
